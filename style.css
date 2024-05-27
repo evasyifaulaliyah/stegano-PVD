@@ -1,0 +1,75 @@
+body {
+  background-color: #dedede;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.container {
+  background-color: white;
+  padding: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 0.75rem;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  max-width: 500px;
+}
+
+.imgInput {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+textarea {
+  border: 1px solid #38bdf8;
+  padding: 0.75rem;
+  outline-width: 1px;
+  outline: #38bdf8;
+  border-radius: 0.375rem;
+}
+
+.divBtn {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.btn {
+  background-color: #38bdf8;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #2aafd9;
+}
+
+.imageContainer {
+  display: flex;
+  gap: 1rem;
+}
+
+.gmbr {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+#originalImage,
+#stegoImage {
+  width: 250px;
+}
+
+#canvas {
+  display: none;
+  width: 250px;
+}

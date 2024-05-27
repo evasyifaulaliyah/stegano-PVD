@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aplikasi Menyembunyikan Data dalam Gambar dengan PVD</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Staatliches&display=swap");
+
+      * {
+        font-family: "Nunito", sans-serif;
+      }
+
+      h1 {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Aplikasi Menyembunyikan Data dalam Gambar dengan PVD</h1>
+
+      <div class="imgInput">
+        <label for="imageInput">Silahkan pilih gambar:</label>
+        <input name="imageInput" type="file" id="imageInput" accept="image/*" />
+      </div>
+
+      <textarea
+        id="messageInput"
+        placeholder="Masukkan pesan yang ingin disembunyikan"
+      ></textarea>
+
+      <div class="divBtn">
+        <button class="btn" id="hideButton">Sembunyikan Pesan</button>
+        <button class="btn" id="revealButton">Ungkap Pesan</button>
+      </div>
+
+      <div class="imageContainer">
+        <div class="gmbr">
+          <h2>Gambar Asli:</h2>
+          <img class="imgGmbr" id="originalImage" alt="Gambar Asli" />
+        </div>
+        <div class="gmbr">
+          <h2>Gambar dengan Pesan:</h2>
+          <img class="imgGmbr" id="stegoImage" alt="Gambar dengan Pesan" />
+        </div>
+      </div>
+
+      <canvas id="canvas"></canvas>
+      <p id="outputMessage"></p>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
